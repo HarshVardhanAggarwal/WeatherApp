@@ -24,49 +24,13 @@ Follow these steps to set up and run the Weather App on your local machine:
 2. **API Key:** Obtain a free API key from a weather API provider. This app uses the OpenWeatherMap API.
 
 ### Setup
-
-1. Clone the repository to your local machine:
-
-    ```bash
+   Clone the repository to your local machine:
     git clone https://github.com/your-username/weather-app.git
-    ```
 
-2. Navigate to the project directory:
+    
+    
 
-    ```bash
-    cd weather-app
-    ```
-
-3. Install the project dependencies:
-
-    ```bash
-    npm install
-    ```
-
-4. Create a `.env` file in the project root and add your OpenWeatherMap API key:
-
-    ```env
-    REACT_APP_API_KEY=your-api-key
-    ```
-
-### Run the App
-
-Once you have completed the setup, start the development server:
-
-```bash
-npm start
-```
-
-The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
-
-## Configuration
-
-You can customize the app's behavior by modifying the following configuration options in the `.env` file:
-
-- **REACT_APP_API_KEY:** Your OpenWeatherMap API key.
-- (Optional) **REACT_APP_UNITS:** The unit system for temperature. Set to `metric` for Celsius or `imperial` for Fahrenheit.
-
-## Contributing
+## And start Contributing
 
 If you would like to contribute to the development of this Weather App, please follow the guidelines in CONTRIBUTING.md.❤️
 
