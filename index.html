@@ -10,15 +10,12 @@
 <body>
     <center>
     <div class="container">
+        <h1 id="welcome-text"></h1> <!-- Text element for dynamic insertion -->
+
         <div class="header">
             <div class="search-box">
                 <input type="text" placeholder="Enter your location" class="input-box">
-
-                <!-- Add an icon inside the button for click indication -->
-                <button id="searchBtn" class="search-btn">
-    &#128269; <!-- Unicode for magnifying glass -->
-</button>
-
+                <button id="searchBtn" class="search-btn">&#128269;</button>
             </div>
         </div>
 
@@ -37,7 +34,7 @@
 
             <div class="weather-details">
                 <div class="humidity">
-                    <i class="fas fa-tint"></i> <!-- Font Awesome droplet icon -->
+                    <i class="fas fa-tint"></i>
                     <div class="text">
                         <span id="humidity">45%</span>
                         <p>Humidity</p>
@@ -45,7 +42,7 @@
                 </div>
 
                 <div class="wind">
-                    <i class="fas fa-wind"></i> <!-- Font Awesome wind icon -->
+                    <i class="fas fa-wind"></i>
                     <div class="text">
                         <span id="wind-speed">12Km/H</span>
                         <p>Wind Speed</p>
@@ -57,5 +54,13 @@
 </center>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript for dynamic insertion of welcome text
+        window.onload = function() {
+            var welcomeText = document.getElementById("welcome-text");
+            welcomeText.textContent = "Welcome to the Weather App!";
+        };
+    </script>
 </body>
 </html>
